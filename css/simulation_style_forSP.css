@@ -1,0 +1,243 @@
+@charset "utf-8";
+/**********************************************
+
+	basic_style_forSP.css
+
+**********************************************/
+/* 文字折り返し設定 */
+* {
+	word-break: break-all !important;
+	word-wrap: break-word !important;
+}
+::selection {
+	background: #ffc6cc;
+}
+::-moz-selection {
+	background: #ffc6cc;
+}
+
+/*--------------------------------------------
+
+	デフォルト設定
+
+---------------------------------------------*/
+/* html */
+html {
+	height: 100%;
+}
+/* body */
+body {
+	position: relative;
+	width: 100%;
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+	font-size: 14px;
+	color: #000000;
+	-webkit-text-size-adjust: 100% !important;
+}
+/* form関連 */
+input[type="text"],input[type="password"],textarea,select {
+	height: 45px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+	font-size: 14px;
+	color: #000000;
+	border: 1px solid #999999;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input {
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+}
+input::-webkit-input-placeholder {
+	color: #cccccc;
+	font-weight: normal;
+}
+input:-ms-input-placeholder {
+	color: #cccccc;
+	font-weight: normal;
+}
+input::-moz-placeholder {
+	color: #cccccc;
+	font-weight: normal;
+}
+label {
+	font-weight: normal!important;
+	margin-bottom: 0;
+	max-width: 100%;
+}
+input[type="radio"].radio {
+	min-height: 0;
+	display: inline-block;
+}
+/* ボタン初期設定 */
+button {
+	background: none;
+	border: none;
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+	/* font-size: 18px; */
+	/* font-weight: bold; */
+	cursor: pointer;
+	padding: 0;
+}
+p,
+table tr td {
+	line-height: 1.75em;
+}
+p,dl,h1,h2,h3,h4 {
+	margin: 0;
+}
+h1,h2,h3,h4 {
+	line-height: 1.0em;
+}
+small {
+	font-size: 10px;
+}
+/* imgタグレスポンシブ対応 */
+img {
+	max-width: 100%;
+	height: auto;
+	width/***/ :auto;
+}
+/* .device01 PCレイアウトは非表示 */
+.device01 {
+	display: none !important;
+}
+
+/*--------------------------------------------
+
+	レイアウト
+
+---------------------------------------------*/
+/* 内 1024px固定値 */
+.inner-frame {
+	min-width: 320px;
+	margin: 0 auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--------------------------------------------
+	ヘッダー
+---------------------------------------------*/
+#header_all {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 200;
+}
+#header_sparea {
+	position: relative;
+	height: 507px;
+}
+#header {
+	position: relative;
+	height: 45px;
+	background: #ffffff;
+	border-bottom: 1px solid #cccccc;
+	z-index: 200;
+}
+#header > .inner-frame {
+	position: relative;
+	height: 45px;
+}
+#header > .inner-frame > h1 {
+	position: absolute;
+	width: 95px;
+	top: 12px;
+	left: 10px;
+}
+
+/*--------------------------------------------
+	コンテンツ
+---------------------------------------------*/
+#contents {
+	padding-top: 45px;
+}
+
+/*--------------------------------------------
+	フッター
+---------------------------------------------*/
+#footer {
+	margin-top: 30px;
+	color: #ffffff;
+}
+#common_copyright > .inner-frame {
+	padding: 0;
+}
+#common_copyright > .inner-frame > p {
+	background: #d01126;
+	text-align: center;
+	padding: 10px 0;
+}
+
+/*--------------------------------------------
+	ページトップ
+---------------------------------------------*/
+#pagetop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 35px;
+	height: 35px;
+	background: url("../img/pagetop_default.png") no-repeat left top;
+	background-size: cover;
+	cursor: pointer;
+}
+#pagetop:hover {
+	background: url("../img/pagetop_over.png") no-repeat left top;
+	background-size: cover;
+}
+
+/*--------------------------------------------
+
+	コンテンツブロック
+
+---------------------------------------------*/
+/* 上余白20px */
+.wrapper-contents-m {
+	margin-top: 20px;
+}
+/* 上余白30px */
+.wrapper-contents-l,
+.wrapper-contents-xl {
+	margin-top: 30px;
+}
+/* 上余白10px */
+.wrapper-contents-m20 {
+	margin-top: 10px;
+}
+
+/*--------------------------------------------
+	ページタイトル
+---------------------------------------------*/
+#pagetitle {
+	margin-bottom: 20px;
+}
+#pagetitle h1 {
+	font-size: 22px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.2em;
+}
+
+/*--------------------------------------------
+	文字位置
+---------------------------------------------*/
+.ta-left {
+	text-align: left!important;
+}
+.ta-right {
+	text-align: right;
+}
+.ta-center {
+	text-align: center;
+}

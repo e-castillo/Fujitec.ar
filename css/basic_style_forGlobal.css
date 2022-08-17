@@ -1,0 +1,11 @@
+@charset "utf-8";
+/**********************************************
+
+	basic_style_forGlobal.css
+
+**********************************************/
+/* 文字折り返し設定 */
+* {
+	word-break: normal !important;
+	word-wrap: normal !important;
+}

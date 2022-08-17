@@ -1,0 +1,331 @@
+@charset "utf-8";
+/**********************************************
+
+	simulation_style_forPrint.css
+
+**********************************************/
+html,body,
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1.125;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+form {
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+	font-size: 14px;
+}
+/* clearfix設定 */
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix{
+	display:inline-block;
+	min-height:1%;  /* for IE 7*/
+}
+/* Hides from IE-mac */
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/**********************************************
+
+	basic_style_forPC.css
+
+**********************************************/
+/* 文字折り返し設定 */
+* {
+	word-break: break-all !important;
+	word-wrap: break-word !important;
+}
+::selection {
+	background: #ffc6cc;
+}
+::-moz-selection {
+	background: #ffc6cc;
+}
+
+/*--------------------------------------------
+
+	デフォルト設定
+
+---------------------------------------------*/
+/* html */
+html {
+	min-width: 1024px;
+	height: 100%;
+}
+/* body */
+body {
+	position: relative;
+	width: 100%;
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+	font-size: 14px;
+	color: #000000;
+	-webkit-text-size-adjust: 100% !important;
+}
+/* form関連 */
+input[type="text"],input[type="password"],textarea,select {
+	height: 45px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+	font-size: 14px;
+	color: #000000;
+	border: 1px solid #999999;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+select {
+	padding-right: 0;
+}
+
+input {
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+}
+input::-webkit-input-placeholder {
+	color: #cccccc;
+	font-weight: normal;
+}
+input:-ms-input-placeholder {
+	color: #cccccc;
+	font-weight: normal;
+}
+input::-moz-placeholder {
+	color: #cccccc;
+	font-weight: normal;
+}
+label {
+	font-weight: normal!important;
+	margin-bottom: 0;
+	max-width: 100%;
+}
+input[type="radio"].radio {
+	min-height: 0;
+	display: inline-block;
+}
+/* ボタン初期設定 */
+button {
+	background: none;
+	border: none;
+	font-family: Helvetica,Arial,Doroid Sans,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif !important;
+	/* font-size: 18px; */
+	/* font-weight: bold; */
+	cursor: pointer;
+	padding: 0;
+}
+p,
+table tr td {
+	line-height: 1.75em;
+}
+p,dl,h1,h2,h3,h4 {
+	margin: 0;
+}
+h1,h2,h3,h4 {
+	line-height: 1.0em;
+}
+small {
+	font-size: 12px;
+}
+/* imgタグレスポンシブ対応 */
+img {
+	max-width: 100%;
+	height: auto;
+	width/***/ :auto;
+}
+/* .device02 spレイアウトは非表示 */
+.device02 {
+	display: none !important;
+}
+
+/*--------------------------------------------
+
+	レイアウト
+
+---------------------------------------------*/
+/* 内 1024px固定値 */
+.inner-frame {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+/*--------------------------------------------
+	ヘッダー
+---------------------------------------------*/
+#header_all {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 200;
+}
+#header {
+	height: 70px;
+	background: #ffffff;
+	border-bottom: 1px solid #cccccc;
+}
+/* ロゴ配置 */
+#header > .inner-frame {
+	position: relative;
+	height: 70px;
+}
+#header > .inner-frame > h1 {
+	position: absolute;
+	width: 149px;
+	height: 36px;
+	top: 20px;
+	left: 0;
+}
+#header > .inner-frame > h1 > a::after,
+#header > .inner-frame > h1 > a:hover::after {
+	display: none;
+}
+
+/*--------------------------------------------
+	コンテンツ
+---------------------------------------------*/
+#contents {
+	padding-top: 70px;
+	min-height: 600px;
+}
+
+/*--------------------------------------------
+	フッター
+---------------------------------------------*/
+#footer {
+	margin-top: 30px;
+	color: #ffffff;
+}
+/* ユーティリティリンク＋copyright */
+#common_copyright {
+	border-top: 3px solid #666666;
+	padding: 20px 0;
+	background: #d01126;
+}
+#common_copyright > .inner-frame {
+	position: relative;
+}
+#common_copyright > .inner-frame > p {
+	text-align: right;
+}
+
+/*--------------------------------------------
+	ページトップ
+---------------------------------------------*/
+#pagetop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url("../img/pagetop_default.png") no-repeat left top;
+	cursor: pointer;
+}
+#pagetop:hover {
+	background: url("../img/pagetop_over.png") no-repeat left top;
+}
+
+/*--------------------------------------------
+
+	コンテンツブロック
+
+---------------------------------------------*/
+/* 上余白40px */
+.wrapper-contents-m {
+	margin-top: 40px;
+}
+.wrapper-contents-l {
+	margin-top: 50px;
+}
+/* 上余白60px */
+.wrapper-contents-xl {
+	margin-top: 60px;
+}
+/* 上余白20px */
+.wrapper-contents-m20 {
+	margin-top: 20px;
+}
+
+/*--------------------------------------------
+	ページタイトル
+---------------------------------------------*/
+/*** 標準 ***/
+#pagetitle {
+	position: relative;
+	/* height: 105px; */
+	/* padding: 40px 0; */
+}
+#pagetitle > .inner-frame {
+	position: relative;
+	height: 100%;
+	min-height: 30px;
+	padding: 40px 0;
+}
+#pagetitle h1 {
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*--------------------------------------------
+	文字位置
+---------------------------------------------*/
+.ta-left {
+	text-align: left!important;
+}
+.ta-right {
+	text-align: right;
+}
+.ta-center {
+	text-align: center;
+}
