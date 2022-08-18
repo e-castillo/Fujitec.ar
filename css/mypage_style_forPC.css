@@ -240,7 +240,7 @@ a.link-icon-next:hover {
 }
 a.link-icon-next:before {
 	content: "";
-	background: url(../img/icon_arrow_common.png) no-repeat left center;
+	background: url(..//public/icon_arrow_common.png) no-repeat left center;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -395,11 +395,11 @@ ul#menunavigation li a:hover {
 	right: 20px;
 	width: 50px;
 	height: 50px;
-	background: url("../img/pagetop_default.png") no-repeat left top;
+	background: url("img/pagetop_default.png") no-repeat left top;
 	cursor: pointer;
 }
 #pagetop:hover {
-	background: url("../img/pagetop_over.png") no-repeat left top;
+	background: url("img/pagetop_over.png") no-repeat left top;
 }
 
 /*--------------------------------------------
@@ -431,7 +431,7 @@ ul.list-formbuttons-center {
 	text-align: center;
 	font-size: 14px;
 	color: #ffffff;
-	background: url("../img/icon_arrow_sp_white.png") no-repeat 10px center #d01126;
+	background: url("img/icon_arrow_sp_white.png") no-repeat 10px center #d01126;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
@@ -458,7 +458,7 @@ ul.list-formbuttons-center {
 	width: 260px;
 	font-size: 14px;
 	color: #000000;
-	background: url("../img/mypage/icon_arrow_sp_red.png") no-repeat 10px center #ffffff;
+	background: url("img/mypage/icon_arrow_sp_red.png") no-repeat 10px center #ffffff;
 	border: 1px solid #cccccc;
 }
 .button-white-large a {
@@ -473,11 +473,11 @@ ul.list-formbuttons-center {
 }
 /* 前へ */
 .button-prev {
-	background: url("../img/mypage/icon_arrow_sp_red_left.png") no-repeat 10px center #ffffff;
+	background: url("img/mypage/icon_arrow_sp_red_left.png") no-repeat 10px center #ffffff;
 }
 /* 次へ */
 .button-next {
-	background: url("../img/mypage/icon_arrow_sp_red_right.png") no-repeat right center #ffffff;
+	background: url("img/mypage/icon_arrow_sp_red_right.png") no-repeat right center #ffffff;
 }
 .button-next,
 .button-prev {
@@ -567,7 +567,7 @@ a.link-icon-prev:before {
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 10px;
-	content: url("../img/icon_arrow_common_prev.png");
+	content: url("img/icon_arrow_common_prev.png");
 }
 /*--------------------------------------------
 	エラー表記
@@ -639,7 +639,7 @@ dl.list-formparts-blocklayout > dd input[type="password"] {
 /* 別窓遷移 */
 a[target*="_blank"]:not(img):after{
 	padding-left: 5px;
-	content: url("../img/icon_windows.png");
+	content: url("img/icon_windows.png");
 }
 /*--------------------------------------------
 	文字位置
@@ -764,7 +764,7 @@ dl.list-info-area dd span {
 	padding-top: 5px;
 }
 dl.list-info-area dd span:before {
-	content: url("../img/news/ico_tell.png");
+	content: url("img/news/ico_tell.png");
 	padding-left: 5px;
 }
 dl.list-info-area dd p {
@@ -873,7 +873,7 @@ ul.list-tabs-block li:hover span {
 ul.list-tabs-block li.active span {
 	border-bottom: 3px solid #d01126;
 	height: 37px;
-	background: url("../img/mypage/tabs_activr.png") no-repeat center bottom #ffffff;
+	background: url("img/mypage/tabs_activr.png") no-repeat center bottom #ffffff;
 }
 ul.list-tabs-block li:first-child {
 	margin-right: -1px;
@@ -1134,5 +1134,5 @@ div.jqplot-table-legend-swatch {
 	vertical-align: middle;
 	padding-left: 5px;
 	padding-top: 5px;
-	content: url("../img/icon_pdf.png");
+	content: url("img/icon_pdf.png");
 }

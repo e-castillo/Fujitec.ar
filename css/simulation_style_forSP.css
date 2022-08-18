@@ -188,12 +188,12 @@ img {
 	right: 20px;
 	width: 35px;
 	height: 35px;
-	background: url("../img/pagetop_default.png") no-repeat left top;
+	background: url("img/pagetop_default.png") no-repeat left top;
 	background-size: cover;
 	cursor: pointer;
 }
 #pagetop:hover {
-	background: url("../img/pagetop_over.png") no-repeat left top;
+	background: url("img/pagetop_over.png") no-repeat left top;
 	background-size: cover;
 }
 

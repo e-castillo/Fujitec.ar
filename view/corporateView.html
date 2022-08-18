@@ -1,0 +1,88 @@
+{{> header}}
+
+{{> navbar}}
+
+<style>
+    /*
+     タイトル画像内にPCで表示しているリード文を表示
+    　（この画面だけ個別対応のためスタイル直書き）
+    */
+    @media screen and (max-width:667px) {
+     #pagetitle {
+      height: 35px !important; 
+     }
+    h1 {
+    top: 20% !important;
+    }
+     .type-bottom {
+    left: 0 !important;
+      display: block;
+      font-size:12px !important;
+      top: 35% !important;
+      text-shadow: 1px 2px 2px rgba(11,0,0,0.5);
+      letter-spacing: 1px;
+     }
+    }
+</style>
+        
+        <div id="contents">
+            <div id="pagetitle" class="type-pagetitle-top type-corporate">
+                <div class="inner-frame">
+                    <div>
+                        <h1>Sobre Fujitec</h1>
+                        <span class="type-bottom" style="left:225px">
+                        “Respetando a las personas, tecnologías, y productos,<br>
+                        colaboramos con personas de naciones de todo el mundo<br>
+                        para desarrollar ciudades hermosas y funcionales<br>
+                        que satisfagan las necesidades de una nueva era.”<br>
+                        <span>ー&nbsp;Declaración de la misión global de Fujitec&nbsp;ー</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-frame">
+                <ul class="listlayout-2clm-inline-menulinks clearfix">
+                    <li><a href="http://www.fujitec.com/corporate/outline/">
+                        <dl class="clearfix">
+                            <dd>
+                                <img src="public/corporatemenu.png" alt="Corporate Data">
+                            </dd>
+                            <dt>Datos Corporativos</dt>
+                        </dl>
+                    </a></li>
+                    <li><a href="http://www.fujitec.com/corporate/message/">
+                        <dl class="clearfix">
+                            <dd>
+                                <!--<img src="/common/fjhp/doc/top_global/img_fixed_page/corporate/" alt="Message">-->
+                            </dd>
+                            <dt>Mensaje</dt>
+                        </dl>
+                    </a></li>
+                </ul>
+                
+                <ul class="listlayout-3clm-inline-borderlinks clearfix">
+                    <li>
+                        <a href="http://www.fujitec.com/corporate/history/">Historia Corporativa</a>
+                    </li>
+                    <li>
+                        <a href="http://www.fujitec.com/ir/business_policy/">Política de gerencia</a>
+                    </li>
+                    <li>
+                        <a href="http://www.fujitec.com/corporate/tecky/">Sobre TECKY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- // #contents -->
+        <div class="prefix-footer">
+                <ul class="list-banners inner-frame clearfix">
+                        <li>
+                               <a href="http://www.fujitec.com/corporate/tecky">
+                                   <img src="public/banner_02_en.png" alt="Fujitec's mascot TECKY">
+                            </a>
+                        </li>
+                   </ul>
+            </div>
+
+{{> footer}} 
+
+<div id="pagetop"></div>
