@@ -1,0 +1,81 @@
+{{> header}}
+
+{{> navbar}}
+
+
+<div id="contents">
+	<div id="pagetitle" class="type-captionborder">
+		<div class="inner-frame">
+			<h1>Contactanos</h1>
+			<p>
+				<span>
+					Por favor, complete el siguiente formulaio, y haga click en el botón "Confirmar".
+				</span>
+			</p>
+		</div>
+	</div>
+	<div class="inner-frame">
+		<ul class="listlayout-3clm-arrow clearfix device01">
+			<li class="step1">Paso 1</li>
+			<li>Paso 2</li>
+			<li>Paso 3</li>
+		</ul>
+		<div class="ta-center device02">
+			<img alt="step1" src="/img/box-step1-sp.png" />		</div>
+		<form action="sendByEmail.php" class="form-contact" accept-charset="utf-8" method="post">			<div class="wrapper-bggraylist wrapper-contents-m">
+				<dl class="list-2clm-bggray type-large clearfix">
+					<dt class="icon-required en">Nombre y apellido</dt>
+					<dd>
+						<input class="input-parts-3" name="name" value="" type="text" id="form_name" />											</dd>
+				</dl>
+				<dl class="list-2clm-bggray type-large clearfix">
+					<dt>Empresa</dt>
+					<dd>
+						<input class="input-parts-2" name="company" value="" type="text" id="form_company" />					</dd>
+				</dl>
+				<dl class="list-2clm-bggray type-large clearfix">
+					<dt class="icon-required en">E-mail</dt>
+					<dd>
+						<input class="input-parts-2" name="mail" value="" type="text" id="form_mail" />											</dd>
+				</dl>
+				<dl class="list-2clm-bggray type-large clearfix">
+					<dt class="icon-required en">Número de contacto</dt>
+					<dd>
+						<input class="input" name="tel1" value="" type="text" id="form_tel" />
+                    </dd>
+				</dl>
+				<dl class="list-2clm-bggray type-large clearfix">
+					<dt>Tipo de contacto</dt>
+					<dd>
+						<input id="form_contact_1" name="contact" value="1" checked="checked" type="radio" />
+                        <label for="form_contact_1">Ventas de equipos</label>
+                        <input id="form_contact_2" name="contact" value="2" type="radio" />
+                        <label for="form_contact_2">Modernizaciones</label>
+                        <input id="form_contact_3" name="contact" value="3" type="radio" />
+                        <label for="form_contact_3">Servicio Técnico</label>
+                        <input id="form_contact_4" name="contact" value="4" type="radio" />
+                        <label for="form_contact_4">Otros</label>
+                    </dd>
+				</dl>
+				<dl class="list-2clm-bggray type-large list-form-content clearfix">
+					<dt class="icon-required en">Por favor, dejenos saber sus<br>comentarios o sugerencias.</dt>
+					<dd>
+						<textarea name="cont" id="form_cont"></textarea>											</dd>
+				</dl>
+			</div>
+			<p class="text-attention-forms">
+				<span>*</span> Datos requeridos.
+			</p>
+			<div class="mg-top-30">
+				<ul class="list-arrow-links send send-type2 clearfix">
+					<li>
+						<button type="submit" name="confrim_btn">Confirm</button>					</li>
+				</ul>
+			</div>
+			<input name="fuel_csrf_token" value="537b4f2779ef0e35e6c101bdf43f41b5a8d052d002aecdac95b29fcdfdb7ef2beed2d2ad518fce14b6accff2482e0170c5aff3a98a142a015bd335671860c2d7" type="hidden" id="form_fuel_csrf_token" />		</form>	</div>
+</div>
+
+
+{{> footer}} 
+
+<div id="pagetop"></div>

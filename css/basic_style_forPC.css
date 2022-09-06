@@ -3212,7 +3212,7 @@ ul.listlayout-2clm-inline-borderlinks > li:hover > a {
 ---------------------------------------------*/
 /* ページタイトル */
 #pagetitle.type-pagetitle-top.type-project {
-	background: url("img/project/pagetitle_project.png") no-repeat left center;
+	background: url("/img/pagetitle_project.png") no-repeat left center;
 	background-size: cover;
 }
 
@@ -3546,7 +3546,7 @@ table.table-many {
 ---------------------------------------------*/
 /* メインビジュアル */
 #pagetitle.type-pagetitle-top.type-recruiting {
-	background: url("img/recruiting/pagetitle_recruiting.png") no-repeat left center;
+	background: url("/img/recruiting/pagetitle_recruiting.png") no-repeat left center;
 	background-size: cover;
 }
 span.type-bottom {
@@ -7112,7 +7112,7 @@ ul.listlayout-4clm-inline-borderlinks.type-modal > li > button:after{
 ---------------------------------------------*/
 /* メインビジュアル */
 #pagetitle.type-pagetitle-top.type-shinsetsu {
-	background: url("img/products/products_mv.png") no-repeat left center;
+	background: url("/img/products.png") no-repeat left center;
 	background-size: cover;
 }
 .box-products-contents {
@@ -9397,7 +9397,7 @@ dl.list-2clm-bggray-children.en > dt {
 	英語版 Products(新規設置)
 ---------------------------------------*/
 #pagetitle.type-pagetitle-top.type-products {
-	background: url("img/en/products_mv_en.png") no-repeat left center;
+	background: url("/img/products.png") no-repeat left center;
 	background-size: cover;
 }
 #pagetitle.type-pagetitle-top.type-products {
